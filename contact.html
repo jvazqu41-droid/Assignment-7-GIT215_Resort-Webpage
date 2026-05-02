@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project GIT215</title>
+        <meta name="author" content="Joan Vazquez">
+        <meta name="description" content="Contact webpage for Pedal Pitchers, based on wireframe for final assignment in GIT215">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Pedal Pitchers Regional | Contact</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                    Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *
+                    </p>
+                    <img src="images/swiss-peak.jpg" alt="image of a large forest range of evergreen trees in front of a towering mountainside">
+                </section>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                    <label for="name">Name:<span class="required">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email Address:<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone-num">Phone Number:<span class="required">*</span></label>
+                    <input type="tel" name="phone-num" id="phone-num" required>
+                    <fieldset>
+                        <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                        <input type="radio" name="contact-pref" id="pref-email" required>
+                        <label for="pref-email">Email</label>
+                        <input type="radio" name="contact-pref" id="pref-phone" required>
+                        <label for="pref-phone">Phone</label>
+                    </fieldset>
+                    <label for="comments">Comments<span class="required">*</span></label>
+                    <textarea name="comments" id="comments" required></textarea>
+                    <input type="submit" name="submit" id="submit" value="Submit Form">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy;2023 - Pedal Pitchers Regional</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

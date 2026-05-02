@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --white:   #E8E3E0;
+    --lt-blue: #63B8ED;
+    --md-blue: #125EB3;
+    --lavender:#656C99;
+    --dk-blue:  #0f2371;
+
+    --font-h: 'Palatino'; /* heading font */
+    --fonts: 'Trebuchet MS', 'Helvetica', 'sans-serif';
+}
+
+body {
+
+margin: 0 auto;
+text-align: center;
+color: var(darkgray);
+}
+
+header, main, footer {
+    width: 1440px;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    background: url(images/swiss-valley.jpg);
+    height: 500px;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    padding: 20px 0px 0px;
+}
+
+h1 {
+    padding: 30px 0px 0px;
+}
+
+h1 a {    
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-h);
+}
+
+header nav ul {
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+padding: 50px 0px 0px;
+font-size: 1.5rem;
+text-decoration: none;
+font-family: var(--font-h);
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid var(--md-blue);
+}
+
+main {
+    background-color: var(--lavender);
+}
+
+#heading-h {
+    grid-row: 1/-1;
+}
+
+main h2 {
+    padding: 60px 0px 0px;
+    font-size: 2rem;
+    margin:0 auto;
+    font-family: var(--font-h);
+}
+
+#main-h p{
+padding: 20px 0px 50px;
+font-size: 1rem;
+font-family: var(--fonts);
+margin: 0 auto;
+max-width: 80ch;
+}
+
+#image-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#image-blocks section h3 {
+    padding: 25px 0px 0px;
+    font-size: 1.3rem;
+    font-family: var(--font-h);
+}
+
+#image-blocks section p {
+    padding: 10px 0px 40px;
+    font-size: 1rem;
+    font-family: var(--fonts);
+    margin: 0 auto;
+    max-width: 70ch;
+}
+
+#image-blocks section img {
+    width: 450px;
+    margin: 0 auto;
+}
+
+#amenities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#escape {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    font-family: var(--font-h);
+}
+
+#contact p {
+    font-size: 1rem;
+    font-family: var(--fonts);
+    margin: 0 auto;
+    max-width: 48ch;
+}
+
+#contact img {
+    width: 400px;
+    margin: 0 auto 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2.2rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+form label {
+    font-family: var(--font-h);
+}
+
+footer {
+    height: 125px;
+    background-color: var(--md-blue);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-family: var(--fonts);
+}
